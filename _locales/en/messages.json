@@ -1,0 +1,6 @@
+{
+  "hello_string": {
+    "message": "Hello World!",
+    "description": "Greeting when the app is loading"
+  }
+}

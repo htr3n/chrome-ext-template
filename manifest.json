@@ -1,0 +1,57 @@
+{
+  "manifest_version": 2,
+  "name": "The Extension Name",
+  "version": "0.0.1",
+  "description": "A longer description of the extension",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Action title",
+    "default_popup": "src/popup.html"
+  },
+
+  "page_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Action title",
+    "default_popup": "src/popup.html"
+  },
+
+  "permissions": [
+    "http://*.google.com/",
+    "bookmarks",
+    "chrome://favicon/",
+    "clipboardRead",
+    "clipboardWrite",
+    "contextMenus",
+    "cookies",
+    "fileBrowserHandler",
+    "geolocation",
+    "history",
+    "idle",
+    "management",
+    "notifications",
+    "tabs",
+    "tts",
+    "ttsEngine",
+    "unlimitedStorage"
+  ],
+
+  "options_page": "options.html",
+
+  "background_page": "background.html",
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.google.com/*"],
+      "css": ["src/styles.css"],
+      "js": ["lib/main.js", "src/content.js"]
+    }
+  ],
+  "update_url": "http://www.myhost.com/myextension/updates.xml"
+}
