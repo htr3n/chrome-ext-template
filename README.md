@@ -31,5 +31,5 @@ Upon successful building, there is a file `your-extension.crx` in the same folde
 
 ## Reference
 
-* http://code.google.com/chrome/extensions
+* https://code.google.com/chrome/extensions
 * https://developer.chrome.com/extensions/devguide
